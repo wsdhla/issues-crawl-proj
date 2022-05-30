@@ -1,0 +1,37 @@
+maven
+packages
+*.log
+/.mvn
+/.idea
+./**/*.iml
+*/**/target
+*/**/.settings
+*/**/.project
+*/**/.classpath
+*/**/.mvn
+*/**/.idea
+*/**/publish
+*/**/node_modules
+*/**/dist-rollup
+*/**/out-tsc
+*/**/out
+*/**/metadata/src
+*/**/metadata/bin/*
+!*/**/metadata/bin/.gitkeep
+!maven/config
+*.iml
+*.jar
+*.bat
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

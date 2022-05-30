@@ -1,0 +1,24 @@
+spring:
+
+  mvc:
+    static-path-pattern: /static/**
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+
+  datasource:
+    url: jdbc:sqlite::resource:db/Issues.db
+    driver-class-name: org.sqlite.JDBC
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+
+# 爬虫模拟gitlab登录会话
+crawl:
+  login:
+    gitlab_session: 793f63cd689b2780ae053d69fdb03720
+  lable-dict: "{\"11211\":\"0SU-Fifm\",\"11210\":\"0SU-Fpln\",\"11209\":\"0SU-Fpub\",\"11196\":\"1类别-缺陷\",\"11197\":\"1类别-需求\",\"11198\":\"2等级一般\",\"11199\":\"2等级-严重\",\"11201\":\"2等级-致命\",\"11202\":\"3加急-否\",\"11203\":\"3加急-是\",\"11207\":\"4状态-fixed\",\"11204\":\"4状态-New\",\"11205\":\"4状态-Open\",\"11206\":\"4状态-Submit\",\"11208\":\"4状态-再次出现\"}"
